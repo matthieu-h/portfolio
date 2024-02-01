@@ -33,14 +33,14 @@ a{
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 3;
 }
 .navbar-menu-item{
     font-weight: bold;
-    margin: 1rem;
+    margin: 1.5rem;
     cursor: pointer;
     color: grey;
 }
@@ -70,7 +70,6 @@ a{
         display: none;
     }
 }
- 
 .burger-menu-links{
     display: flex;
     flex-direction: column;
@@ -158,4 +157,77 @@ a{
 }
 .show-links .burger-bar::after{
     transform: rotate(-45deg);
+}
+
+/* Home */
+.home{
+    display: flex;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.home-hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.home-intro-text{
+
+}
+.home-intro-name{
+    color: #7451eb;
+}
+.home-intro-para{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.menu-btn{
+    background: #7451eb;
+    margin: 1rem ;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+    width: 12rem;
+}
+.message-icon{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+    color: white;
+}
+.message-icon-text{
+    padding-left: 0.5rem;
+}
+.home-portrait{
+
+}
+
+
+.portrait{
+    /* width: 400px; */
+    height: 35vh;
+}
+@media screen and (max-width:720px){
+    .home{
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    .home-content{
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+    }
+    .home-hello{
+        align-self: self-start;
+    }
+    .home-portrait{
+        align-self: center;
+    }
 }

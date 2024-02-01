@@ -11,7 +11,7 @@ const BurgerMenu = () => {
     <nav className={`burger-menu ${showLinks ? "show-links" : ""}`}>
       <ul className="burger-menu-links">
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="">
+          <Link className="burger-menu-link" to="#home">
             Accueil
           </Link>
         </li>
@@ -31,7 +31,7 @@ const BurgerMenu = () => {
           </Link>
         </li>
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="">
+          <Link className="burger-menu-link" to="#contact">
             Contact
           </Link>
         </li>
