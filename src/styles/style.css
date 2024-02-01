@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* background : rgb(30, 30, 30); */
+    color: grey;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.navbar-menu-item{
+    font-weight: bold;
+    margin: 1rem;
+    cursor: pointer;
+    color: grey;
+}
+.navbar-menu-item:hover{
+    color: #BCAEF4;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #7451eb;
+}
+.navbar-menu-item:active{
+    color:#7451eb;
+}
+
+@media screen and (max-width:720px){
+    .navbar{
+        display: none;
+    }
+}
+@media screen and (min-width:720px){
+    .burger-menu{
+        display: none;
+    }
+}
+
+/* burger menu */
+@media screen and (min-width:720px){
+    .burger-menu{
+        display: none;
+    }
+}
+ 
+.burger-menu-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    width: 0;
+    height: 100vh;
+    padding: 2rem;
+    visibility: hidden;
+    background-color: gray;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.show-links .burger-menu-links{
+    right: 0;
+    width: 100vw;
+    visibility: visible;
+}
+.burger-menu-link{
+    display: block;
+    padding: 1.5rem;
+    font-size: 7vw;
+    color: inherit;
+}
+.burger-menu-item::after{
+    content:"";
+    display: block;
+    margin: 0 auto;
+    width: 3vw;
+    height: 1px;
+    background: white;
+}
+.burger-menu-item:last-child::after{
+    display: none;
+}
+.burger-button{
+    display: flex;
+    position: fixed;
+    top:2rem;
+    right: 1rem;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+}
+.burger-button:hover{
+    cursor: pointer;
+}
+.burger-bar,
+.burger-bar::before,
+.burger-bar::after{
+    display: block;
+    width: 40px;
+    height: 5px;
+    position: relative;
+    border-radius: 3px;
+    background: black;
+    transition: all .3s ease-in-out;
+}
+.burger-bar::before,
+.burger-bar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.burger-bar::before{
+    transform: translateY(-14px);
+}
+.burger-bar::after{
+    transform: translateY(14px);
+}
+.burger-bar{
+    transform: translateY(-14px);
+}
+.show-links .burger-bar{
+    background: transparent;
+}
+.show-links .burger-bar::before{
+    transform: rotate(45deg);
+}
+.show-links .burger-bar::after{
+    transform: rotate(-45deg);
+}
