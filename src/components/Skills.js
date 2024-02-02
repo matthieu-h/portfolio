@@ -4,18 +4,12 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="skills-intro">
-        <p className="skills-text">
-          Mon apprentissage du Web est actuellement centré sur ces technologies,
-          néanmoins j'ai pour ambition de m'adapter à d'autres technologies
-          selon les besoins des projets.
-        </p>
         <h1 className="skills-title">Compétences</h1>
-        <p className="skill-description">
+        <p>
           Développeur Front-end débutant, je souhaite faire de React JS ma
           spécialité.
-          <br />
-          Je suis à votre disposition pour collaborer !
         </p>
+        <p>Je suis à votre disposition pour collaborer !</p>
       </div>
       <div className="skills-bloc">
         <div className="skills-bloc-text">

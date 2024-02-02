@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Ohmyfood !",
+        "description": "Site “mobile first” qui répertorie les menus de restaurants gastronomiques.",
+        "technologies": ["HTML", "CSS", "Sass"],
+        "githubRepoLink": "https://github.com/matthieu-h/ocr-p4-ohmyfood.git",
+        "websiteLink": "https://matthieu-h.github.io/ocr-p4-ohmyfood/",
+        "picture": "./pictures/ohmyfood.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Print it",
+        "description": "Transformation d'un site statique en dynamique avec JavaScript",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "githubRepoLink": "https://github.com/matthieu-h/print-it-js.git",
+        "websiteLink": "https://matthieu-h.github.io/print-it-js/",
+        "picture": "./pictures/print-it.png" 
+    },
+    {
+        "id": "3",
+        "name": "Sophie Bluel",
+        "description": "Création d'un page web dynamique avec JavaScript",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "githubRepoLink": "https://github.com/matthieu-h/Portfolio-architecte-sophie-bluel-master.git",
+        "websiteLink": "",
+        "picture": "./pictures/sophie-bluel.jpg" 
+    },
+    {
+        "id": "4",
+        "name": "Kasa App",
+        "description": "Création d'une application web de location immobilière avec React.",
+        "technologies": ["HTML", "JavaScript","Sass", "React"],
+        "githubRepoLink": "https://github.com/matthieu-h/kasa.git",
+        "websiteLink": "",
+        "picture": "./pictures/kasa.jpg"
+    }
+]

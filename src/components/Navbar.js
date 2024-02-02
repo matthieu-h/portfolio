@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link className="navbar-menu-item" to="#skills">
           Compétences
         </Link>
-        <Link className="navbar-menu-item" to="">
+        <Link className="navbar-menu-item" to="#portfolio">
           Portfolio
         </Link>
         <Link className="navbar-menu-item" to="">
