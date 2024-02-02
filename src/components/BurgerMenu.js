@@ -16,7 +16,7 @@ const BurgerMenu = () => {
           </Link>
         </li>
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="">
+          <Link className="burger-menu-link" to="#skills">
             Compétences
           </Link>
         </li>

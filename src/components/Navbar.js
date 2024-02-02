@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link className="navbar-menu-item" to="#home">
           Accueil
         </Link>
-        <Link className="navbar-menu-item" to="">
+        <Link className="navbar-menu-item" to="#skills">
           Compétences
         </Link>
         <Link className="navbar-menu-item" to="">

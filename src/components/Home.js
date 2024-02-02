@@ -7,12 +7,9 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <div className="home-content">
-        <span className="home-hello">Bonjour,</span>
-        <span className="home-intro-text">
-          Je suis <span className="home-intro-name">Matthieu,</span> <br />
-          Développeur Front-end.
-        </span>
-        <p className="home-intro-para">
+        <span className="home-name">Matthieu Hatinguais</span> <br />
+        <span className="home-dev">Développeur Front-end</span>
+        <p className="home-para">
           Je suis développeur Front-end débutant basé à La Rochelle.
         </p>
         <Link to="#contact" className="menu-contact-link">
