@@ -76,6 +76,10 @@ a{
         display: none;
     }
 }
+.burger-menu{
+    position: relative;
+    z-index: 5;
+}
 .burger-menu-links{
     display: flex;
     flex-direction: column;
@@ -228,21 +232,21 @@ a{
 @media screen and (max-width:720px){
     .home{
         flex-direction: column;
-        padding-top: 60px;
+        padding-top: 20px;
+        margin-top: 5rem;
     }
     .home-content{
-        display: flex;
-        align-items: center;
         padding-bottom: 0;
-    }
-    .home-hello{
-        align-self: self-start;
+        padding-left: 1.5rem;
     }
     .home-intro-text{
         align-self: start;
     }
     .home-intro-para{
         align-self: start;
+    }
+    .menu-contact-link{
+        align-self: center;
     }
     .home-portrait{
         align-self: center;
@@ -313,6 +317,12 @@ a{
     margin-right: 1rem;
     height: auto;
     max-width: 100%;
+}
+@media screen and (max-width:720px){
+    .skills{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
 }
 /* Portfolio */
 .portfolio {
@@ -414,6 +424,11 @@ a{
 .websitelink-not-exist{
     visibility: hidden;
 }
+@media screen and (max-width:720px){
+    .portfolio-gallery{
+        width: 80vw;
+    }
+}
 
 /* About */
 .about{
@@ -439,6 +454,12 @@ a{
 }
 .about-para{
     margin-bottom: 1.5rem;
+}
+@media screen and (max-width:720px){
+    .about{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /* Contact */
@@ -468,4 +489,12 @@ a{
 .contact-btn:hover{
     background: var(--grey-color);
     color: var(--green-color)
+}
+@media screen and (max-width:720px){
+    .contact{
+        margin-bottom: 4rem;
+    }
+    .contact h2{
+        margin-bottom: 2rem;
+    }
 }
