@@ -11,27 +11,47 @@ const BurgerMenu = () => {
     <nav className={`burger-menu ${showLinks ? "show-links" : ""}`}>
       <ul className="burger-menu-links">
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="#home">
+          <Link
+            className="burger-menu-link"
+            to="#home"
+            onClick={showBurgerLinks}
+          >
             Accueil
           </Link>
         </li>
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="#skills">
+          <Link
+            className="burger-menu-link"
+            to="#skills"
+            onClick={showBurgerLinks}
+          >
             Compétences
           </Link>
         </li>
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="#portfolio">
+          <Link
+            className="burger-menu-link"
+            to="#portfolio"
+            onClick={showBurgerLinks}
+          >
             Portfolio
           </Link>
         </li>
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="#about">
+          <Link
+            className="burger-menu-link"
+            to="#about"
+            onClick={showBurgerLinks}
+          >
             À propos
           </Link>
         </li>
         <li className="burger-menu-item">
-          <Link className="burger-menu-link" to="#contact">
+          <Link
+            className="burger-menu-link"
+            to="#contact"
+            onClick={showBurgerLinks}
+          >
             Contact
           </Link>
         </li>
